@@ -9,4 +9,4 @@ var userOne = {
     }
 }; 
 
-console.log(userOne.name); 
+userOne.name = 'Spark'; 
