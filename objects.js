@@ -1,10 +1,18 @@
+//represents our User class and creates User objects.
 function User(email, name){
     this.email = email;
     this.name = name;
+    this.online = false; 
+}
+
+User.prototype.login = function(){
+    this.online = true;
+    console.log(this.email, 'has logged in');
+}
+
+User.prototype.logout = function(){
     this.online = false;
-    this.login = function(){
-        console.log(this.email, 'has logged in');
-    };
+    console.log(this.email, 'has logged out');
 }
 
 var userOne = new User('ryu@ninjas.com', 'Ryu');
