@@ -3,13 +3,18 @@ class User {
         this.email = email;
         this.name = name;
     }
+    login(){ 
+        console.log(this.email, 'just logged in');
+    }
+    logout(){ 
+        console.log(this.email, 'just logged out'); 
+    }
 }
 
 var userOne = new User('sohil@email.com', 'sohil');
 var userTwo = new User('sparkphotos@gmail.com','spark');
-
-console.log(userOne); 
-console.log(userTwo); 
+userOne.login();
+userTwo.logout();
 
 // the 'new' keyword
 // creates a new empty object
