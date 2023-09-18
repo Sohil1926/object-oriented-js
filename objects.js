@@ -20,7 +20,7 @@ function Admin(...args) {
 }
 
 var userOne = new User('ryu@ninjas.com', 'Ryu');
-var userTwo = new User('yoshi@mariokorp.com', 'Yoshi');
+var userTwo = new User('spark@mariokorp.com', 'Yoshi');
 var admin = new Admin('sean@email.com', 'Sean');
 
 console.log(userOne);
